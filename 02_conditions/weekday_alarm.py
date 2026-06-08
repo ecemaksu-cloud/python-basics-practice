@@ -1,8 +1,10 @@
-gun = input("Günü giriniz: ").lower()
+# Set alarm according to the day of the week
 
-if gun in ["pazartesi", "salı", "çarşamba", "perşembe", "cuma"]:
-    print("7:00 alarmını kurdun")
-elif gun in ["cumartesi", "pazar"]:
-    print("9:30 alarmını kurdun")
+day = input("Enter the day: ").lower()
+
+if day in ["monday", "tuesday", "wednesday", "thursday", "friday"]:
+    print("Alarm set for 07:00")
+elif day in ["saturday", "sunday"]:
+    print("Alarm set for 09:30")
 else:
-    print("Hatalı değer girdiniz")
+    print("Invalid value entered")
